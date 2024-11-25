@@ -1,0 +1,35 @@
+
+[window]
+opacity = 0.97
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+
+[font]
+normal.family = "Iosevka Nerd font"
+bold.family = "Iosevka Nerd font"
+italic.family = "Iosevka Nerd font"
+bold_italic.family = "Iosevka Nerd font"
+
+size = 6.5
+
+[general]
+import = [
+	"~/.config/alacritty/themes/themes/carbon.toml"
+	# "~/.config/alacritty/themes/themes/everblush.toml"
+	# "~/.config/alacritty/themes/themes/rasmus.toml"
+	# "~/.config/alacritty/themes/themes/atom_dark.toml"
+	# "~/.config/alacritty/themes/themes/vscode.toml"
+	# "~/.config/alacritty/themes/themes/focus-light.toml"
+	# "~/.config/alacritty/themes/themes/portal.toml"
+	# "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+	# "~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
+	# "~/.config/alacritty/themes/themes/monokai_pro.toml"
+	# "~/.config/alacritty/themes/themes/nord.toml"
+	# "~/.config/alacritty/themes/themes/nightspace.toml"
+	# "~/.config/alacritty/themes/themes/material_darker.toml"
+	# "~/.config/alacritty/themes/themes/oldworld.toml"
+	# "~/.config/alacritty/themes/themes/base16_default_dark.toml"
+]

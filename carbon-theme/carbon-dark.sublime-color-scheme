@@ -1,0 +1,392 @@
+{
+	"name": "Carbon Dark Colorscheme",
+	"author": "alexeev-prog",
+
+	"variables": {
+		"grey": "#1a1a19", // background
+		"grey2": "#979796", // comments,
+		"grey3": "#7d7d7c", // invisibles,
+		"grey4": "#d9d9d9",
+		"grey5": "#868685",
+
+		"green":            "#97d39a",
+		"green2":           "#A0F1B6",
+
+		"blue": 			"#a6cded",
+		"blue2":            "#8db4d4",
+		"blue3":            "#7FBBB3",
+		"blue4":            "#85befd",
+
+		"cyan": 			"#94c9b2",
+		"cyan2": 			"#7bb099",
+		
+		"magenta": 			"#f7b4e1",
+		"crimson":          "#ed557d",
+		"purple":           "#de9bc8",
+		"pink":             "#eb6f92",
+
+		"red":              "#ffafa5",
+		"red2":             "#ef867c",
+		"red3":				"#cb6966",
+
+		"orange":           "#f4bf75",
+		"orange2": 			"#fd6853", // e78a4e
+
+		"yellow":           "#ffdeaa",
+		"yellow2": 			"#ffc591",
+
+		"white":            "#d1d1d1"
+	},
+
+	"globals": {
+		"foreground":         "var(grey4)",
+		"background":         "var(grey)",
+
+		"caret":              "var(grey5)",
+		"accent":             "var(blue1)",
+		"selection":          "color(var(grey5) l(- 30%))",
+		"line_highlight":     "hsla(220, 100%, 80%, .04)",
+		"invisibles":         "color(var(grey3)",
+		"selection_corner_style": "square",
+		"tags_options": "underline",
+		"tags_foreground": "var(blue1)",
+		"brackets_options": "underline",
+		"brackets_foreground": "var(blue1)",
+
+		// diff
+		"line_diff_added":    "var(green2)",
+		"line_diff_deleted":  "var(red3)",
+		"line_diff_modified": "var(yellow)",
+
+		// gutter
+		"gutter_foreground":  "var(grey3)",
+		"fold_marker":        "var(grey)",
+
+		// guides
+		"rulers":             "var(grey4)",
+		"guide":              "#3f3f3f",
+		"stack_guide":        "var(grey3)",
+		"active_guide":       "var(grey2)",
+	},
+
+	"rules": [
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "var(grey2)"
+		},
+		{
+			"name": "Documentation",
+			"scope": "comment.block.documentation, comment.block.documentation punctuation.definition.comment",
+			"foreground": "var(grey2)",
+			"font_style": "italic"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "var(orange2)"
+		},
+		{
+			"name": "Numeric Base",
+			"scope": "punctuation.definition.numeric",
+			"foreground": "var(orange2)",
+		},
+		{
+			"name": "Support",
+			"scope": "support",
+			"font_style": "italic"
+		},
+
+		{
+			"name": "User-defined Constant",
+			"scope": "constant.other, entity.name.constant, variable.other.constant",
+			"foreground": "#fff"
+		},
+		{
+			"name": "Built-in constant",
+			"scope": "constant.language",
+			"foreground": "var(cyan)"
+		},
+		{
+			"name": "Library Constant",
+			"scope": "support.constant",
+			"foreground": "var(cyan2)"
+		},
+		{
+			"name": "Escape Character",
+			"scope": "constant.character.escape",
+			"foreground": "var(white)",
+		},
+
+		{
+			"name": "Keywords",
+			"scope": "keyword, storage",
+			"foreground": "var(purple)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Keyword Python",
+			"scope": "keyword.control.loop.for.python, keyword.control.conditional.if.python, keyword.control.loop.for.in.python, keyword.control.flow.continue.python, keyword.control.loop.for.generator.python, keyword.control.loop.while.python, keyword.control.flow.break.python, keyword.control.conditional.else.python, keyword.control.exception.try.python, keyword.control.exception.catch.python, keyword.other.create.sql, keyword.other.sql, keyword.other.DML.sql",
+			"foreground": "var(purple)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Operator/Unit",
+			"scope": "keyword.operator, punctuation.accessor, keyword.other.unit",
+			"foreground": "var(pink)"
+		},
+		{
+			"name": "Variables",
+			"scope": "variable, entity.name.variable",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Language variable",
+			"scope": "variable.language",
+			"foreground": "var(red2)"
+		},
+		{
+			"name": "Parameters",
+			"scope": "variable.parameter",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Annotations",
+			"scope": "variable.annotation, variable.macro",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Annotation punctuation",
+			"scope": "punctuation.definition.annotation",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Class/Type Definition",
+			"scope": "entity.name.class - entity.name.class.forward-decl, entity.name.struct - entity.name.struct.forward-decl, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, entity.name.impl, entity.name.type - entity.name.type.module",
+			"foreground": "var(blue4)"
+		},
+		{
+			"name": "Library Class/Type",
+			"scope": "support.class, support.type",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Inherited",
+			"scope": "entity.other.inherited-class",
+			"foreground": "var(blue3)",
+			"font_style": "italic"
+		},
+		{
+			"name": "User-defined Function",
+			"scope": "variable.function",
+			"foreground": "var(blue4)"
+		},
+		{
+			"name": "Library Function",
+			"scope": "support.function - variable.macro, support.macro",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Function Definition",
+			"scope": "entity.name.function",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Entity name",
+			"scope": "entity.name - (entity.name.section, entity.name.tag, entity.name.label, entity.name.struct.forward-decl, entity.name.class.forward-decl, entity.name.type.module)",
+			"foreground": "var(blue3)"
+		},
+		{
+			"name": "Contstructor",
+			"scope": "entity.name.function.constructor",
+			"foreground": "var(green2)",
+			"font_style": "bold"
+		},
+		{
+			"name": "destructor",
+			"scope": "entity.name.function.destructor",
+			"foreground": "var(red2)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Namespace",
+			"scope": "entity.name.namespace",
+			"foreground": "var(magenta)",
+			"font_style": "underline"
+		},
+		{
+			"name": "Import",
+			"scope": "keyword.control.import",
+			"foreground": "var(orange)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Built-in constant Python",
+			"scope": "constant.language.python",
+			"foreground": "var(magenta)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Storage",
+			"scope": "storage",
+			"foreground": "var(yellow)"
+		},
+
+		{
+			"name": "Tag name",
+			"scope": "entity.name.tag",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Angle Brackets",
+			"scope": "punctuation.definition.tag",
+			"foreground": "var(grey4)",
+		},
+		{
+			"name": "Tag attribute",
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(cyan)"
+		},
+		{
+			"name": "Attribute Class",
+			"scope": "entity.other.attribute-name.class",
+			"foreground": "var(blue2)"
+		},
+		{
+			"name": "Attribute ID",
+			"scope": "entity.other.attribute-name.id",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Pseudo",
+			"scope": "entity.other.pseudo-class, entity.other.pseudo-element",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "CSS Properties",
+			"scope": "support.type.property-name",
+			"foreground": "var(yellow)",
+			"font_style": "",
+		},
+		{
+			"name": "Colors",
+			"scope": "constant.other.color",
+			"foreground": "var(green)"
+		},
+		// Markup
+
+		{
+			"name": "Markup headings",
+			"scope": "markup.heading entity.name.section",
+			"font_style": "bold",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Markup h2",
+			"scope": "markup.heading.2 entity.name.section",
+			"font_style": "bold",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "markup headings h2",
+			"scope": "markup.heading.2 punctuation.definition.heading",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Markup h3",
+			"scope": "markup.heading.3 entity.name.section",
+			"font_style": "bold",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "markup headings h3",
+			"scope": "markup.heading.3 punctuation.definition.heading",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Markup h4",
+			"scope": "markup.heading.4 entity.name.section",
+			"font_style": "bold",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "markup headings h4",
+			"scope": "markup.heading.4 punctuation.definition.heading",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "markup headings punctuation",
+			"scope": "markup.heading punctuation.definition.heading",
+			"foreground": "var(red2)"
+		},
+		{
+			"name": "Bold",
+			"scope": "markup.bold, markup.bold punctuation.definition.bold",
+			"font_style": "bold",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "Italic",
+			"scope": "markup.italic, markup.italic punctuation.definition.bold",
+			"font_style": "italic",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "Bold Italic",
+			"scope": "markup.bold markup.italic, markup.bold_italic, markup.bold_italic punctuation.definition.bold",
+			"font_style": "bold italic",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "Markup Code",
+			"scope": "markup.raw - punctuation.definition.raw",
+			"background": "color(var(grey) l(+ 5%))"
+		},
+		{
+			"name": "markup blockquote",
+			"scope": "markup.quote",
+			"background": "color(var(grey) l(+ 3%))",
+			"foreground": "color(var(grey5) l(+ 5%))",
+			"font_style": "italic"
+		},
+		{
+			"scope": "string.other.link, meta.link.inline.description, meta.image.inline.description",
+			"foreground": "var(green2)"
+		},
+		{
+			"name": "markup links",
+			"scope": "markup.underline.link",
+			"foreground": "var(blue4)"
+		},
+		{
+			"name": "List numbers",
+			"scope": "markup.list.numbered.bullet, markup.list.unnumbered.bullet, punctuation.definition.list_item",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "markup hr",
+			"scope": "punctuation.definition.thematic-break",
+			"foreground": "var(pink)"
+		},
+		{
+			"name": "Inserted",
+			"scope": "markup.inserted",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Deleted",
+			"scope": "markup.deleted",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Changed",
+			"scope": "markup.changed",
+			"foreground": "var(yellow)"
+		}
+	]
+}

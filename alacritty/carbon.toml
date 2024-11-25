@@ -1,0 +1,26 @@
+# Carbon Colorscheme
+# By Alexeev Bronislav
+
+[colors.primary]
+background = '#171716'
+foreground = '#d9d9d9'
+
+[colors.normal]
+black   = '#333332'
+red     = '#ffafa5'
+green   = '#97d39a'
+yellow  = '#ffdeaa'
+blue    = '#a6cded'
+magenta = '#f7b4e1'
+cyan    = '#86c1b9'
+white   = '#d1d1d1'
+
+[colors.bright]
+black   = '#6c6c6b'
+red     = '#ffafa5'
+green   = '#97d39a'
+yellow  = '#ffdeaa'
+blue    = '#a6cded'
+magenta = '#f7b4e1'
+cyan    = '#86c1b9'
+white   = '#eeeeee'
