@@ -1,5 +1,9 @@
 # carbon-colorscheme
-Dark, eye-pleasing, pastel theme
+Dark, eye-pleasing, pastel theme.
+
+![wallpaper](./lines.jpg)
+
+---
 
 ![screenshot](./screenshot.png)
 
@@ -16,6 +20,19 @@ Dark, eye-pleasing, pastel theme
 ## Advanced colors
 ![advacned](./advanced_colors.png)
 
+# GTK Theme
+Copy `carbondark` to `~/.themes/carbondark`:
+
+```bash
+cp carbondark -r ~/.themes/
+```
+
+# NVIM Config CARBON-NVIM
+Copy `nvim` to `~/.config/nvim`:
+
+```bash
+cp nvim -r ~/.config/
+```
 
 # Alacritty
 Create `~/.config/alacritty/themes/carbon.toml`:
