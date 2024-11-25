@@ -1,7 +1,7 @@
 # carbon-colorscheme
 Dark, eye-pleasing, pastel theme.
 
-![wallpaper](./lines.jpg)
+![wallpaper](./wallpapers/lines.jpg)
 
 ---
 
@@ -28,6 +28,13 @@ cp carbondark -r ~/.themes/
 ```
 
 # NVIM Config CARBON-NVIM
+
+![screenshot](./scr1.png)
+
+![screenshot](./scr2.png)
+
+![screenshot](./scr3.png)
+
 Copy `nvim` to `~/.config/nvim`:
 
 ```bash
